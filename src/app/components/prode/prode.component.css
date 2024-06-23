@@ -1,0 +1,59 @@
+#fondo {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../../../assets/Images/ca.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
+.prode-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.partido-card,
+.pregunta-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+img {
+  width: 30px; /* Ajuste el tamaño aquí según sus preferencias */
+  height: auto;
+}
+
+th,
+td,
+p {
+  color: white;
+}
+
+button {
+  color: white;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+button:hover {
+  color: white;
+  background-color: #0056b3;
+  border-color: #004085;
+}

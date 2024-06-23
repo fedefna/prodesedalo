@@ -1,0 +1,24 @@
+<div id="fondo" class="position-relative overflow-hidden">
+    <h2><b>Resultados:</b></h2>
+    <div class="container-fluid mt-3">
+        <div class="table-responsive">
+            <table class="table table-hover table-dark table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Jugador</th>
+                        <th scope="col">Puntos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let puntaje of puntajes; let i = index">
+                        <td>{{ i + 1 }}</td>
+                        <td>{{ puntaje.jugador }}</td>
+                        <td>{{ puntaje.puntos }}</td>
+                        <td><button class="btn btn-primary btn-sm" (click)="seleccionarProde(puntaje)">Ver Prode</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<div id="fondo" class="position-relative overflow-hidden">
+  <h2><b>Predicciones y Respuestas:</b></h2>
+  <div class="container main-container mt-3" *ngIf="prode && partidos && preguntas">
+    <div class="prode-card">
+      <h3>{{ prode!.jugador }}</h3>
+      <div class="partidos">
+        <div *ngFor="let partido of partidos">
+          <div class="partido-card">
+            <p>Fecha y Hora: {{ partido.fecha }}</p>
+            <p>Resultados: <img [src]="partido.fotoLocal" alt="Bandera Local"> {{ getResultadoLocalByPartiodoId(partido.id) }} - <img [src]="partido.fotoVisitante" alt="Bandera Visitante"> {{ getResultadoVisitanteByPartiodoId(partido.id) }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="preguntas">
+        <div *ngFor="let pregunta of preguntas">
+          <div class="pregunta-card">
+            <p>{{ pregunta.pregunta }}</p>
+            <p>Respuesta: {{ getRespuestaByPreguntaId(pregunta.id) }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

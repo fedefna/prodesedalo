@@ -1,0 +1,41 @@
+#fondo {
+  width: 100%;
+  min-height: 100vh; /* Cambiado de height a min-height para evitar el scroll innecesario */
+  background-image: url(../../../assets/Images/ca.svg);
+  background-repeat: no-repeat;
+  background-size: contain; /* Ajusta el tamaño del fondo */
+  background-position: center center; /* Centra el fondo */
+  background-attachment: fixed; /* Fija el fondo */
+  padding: 20px; /* Ajustar el padding según sea necesario */
+  box-sizing: border-box; /* Asegurarse de que el padding no cause un scroll innecesario */
+  overflow: hidden; /* Eliminar el scroll */
+}
+
+h2 {
+  text-align: center;
+  color: white;
+}
+
+.table-responsive {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+  border-radius: 8px; /* Bordes redondeados para un mejor aspecto */
+  padding: 10px; /* Espacio alrededor de la tabla */
+}
+
+th, td {
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+button {
+  color: white;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+button:hover {
+  color: white;
+  background-color: #0056b3;
+  border-color: #004085;
+}
